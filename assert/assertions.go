@@ -243,7 +243,6 @@ func Fail(t TestingT, failureMessage string, msgAndArgs ...interface{}) bool {
 		h.Helper()
 	}
 	content := []labeledContent{
-		{"Error Trace", strings.Join(CallerInfo(), "\n\t\t\t")},
 		{"Error", failureMessage},
 	}
 
